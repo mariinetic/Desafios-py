@@ -22,7 +22,6 @@ def draw_heart(stdscr):
         stdscr.clear()
         
         for i, line in enumerate(heart):
-            # Verifica se a posição está dentro dos limites da tela
             if y + i < height and x < width:
                 stdscr.addstr(y + i, x, line)
         
