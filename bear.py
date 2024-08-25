@@ -1,7 +1,7 @@
 import curses
 
-def draw_balloon(stdscr, x, y):
-    balloon = [
+def draw_bear(stdscr, x, y):
+    bear = [
         "───▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄───",
         "───█▒▒░░░░░░░░░▒▒█───",
         "────█░░█░░░░░█░░█────",
@@ -27,7 +27,7 @@ def main(stdscr):
     while True:
         stdscr.clear()
 
-        draw_balloon(stdscr, x, y)
+        draw_bear(stdscr, x, y)
         stdscr.refresh()
 
         y += dy
